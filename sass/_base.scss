@@ -1,0 +1,25 @@
+* { 
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+} 
+
+[class^="container"] {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-left: auto;
+  margin-right: auto; 
+}
+ 
+.container { max-width: 1600px; }
+
+.container-wide { max-width: 1720px; }
+
+@media(min-width:768px) {
+  .container {
+      gap: 60px;
+  }
+}
